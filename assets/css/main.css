@@ -227,7 +227,14 @@ html {
 body,
 input,
 select,
-textarea {
+textarea,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #ffffff;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
@@ -1455,25 +1462,56 @@ body.is-preload #bg:before {
 }
 
 #header .content .inner {
-  -moz-transition: max-height 0.75s ease, padding 0.75s ease,
+  -moz-transition: max-height 0.1s ease, padding 0.1s ease,
     opacity 0.325s ease-in-out;
-  -webkit-transition: max-height 0.75s ease, padding 0.75s ease,
+  -webkit-transition: max-height 0.1s ease, padding 0.5s ease,
     opacity 0.325s ease-in-out;
-  -ms-transition: max-height 0.75s ease, padding 0.75s ease,
+  -ms-transition: max-height 0.5s ease, padding 0.5s ease,
     opacity 0.325s ease-in-out;
-  transition: max-height 0.75s ease, padding 0.75s ease,
+  transition: max-height 0.5s ease, padding 0.5s ease,
     opacity 0.325s ease-in-out;
-  -moz-transition-delay: 0.25s;
-  -webkit-transition-delay: 0.25s;
-  -ms-transition-delay: 0.25s;
-  transition-delay: 0.25s;
-  padding: 3rem 2rem;
-  max-height: 40rem;
+  -moz-transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+  -ms-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  padding: 2rem 3rem;
+  max-height: 10rem;
   overflow: hidden;
 }
 
 #header .content .inner > :last-child {
   margin-bottom: 0;
+}
+/* Contact Section */
+#contact {
+  padding: 20px 20px;
+  background-color: #2b262600;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#contact > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#contact a {
+  display: block;
+  min-width: 7.5rem;
+  height: 2.75rem;
+  line-height: 2.75rem;
+  padding: 0 1.25rem 0 1.45rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 0.8rem;
+  /* font-weight: bold; */
+  border-bottom: 0;
 }
 
 #header .content p {
@@ -1491,13 +1529,13 @@ body.is-preload #bg:before {
   margin-bottom: 0;
   list-style: none;
   padding-left: 0;
-  border: solid 1px #ffffff;
+  /* border: solid 1px #ffffff; */
   border-radius: 4px;
 }
 
 #header nav ul li {
   padding-left: 0;
-  border-left: solid 1px #ffffff;
+  /* border-left: solid 1px #ffffff; */
 }
 
 #header nav ul li:first-child {
@@ -1511,8 +1549,9 @@ body.is-preload #bg:before {
   line-height: 2.75rem;
   padding: 0 1.25rem 0 1.45rem;
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: bold;
   border-bottom: 0;
 }
 
@@ -1624,7 +1663,7 @@ body.is-preload #header .content .inner {
 
   #header nav ul li {
     border-left: 0;
-    border-top: solid 1px #ffffff;
+    /* border-top: solid 1px #ffffff; */
   }
 
   #header nav ul li:first-child {
