@@ -1449,8 +1449,8 @@ body.is-preload #bg:before {
 #header .content {
   border-style: solid;
   border-color: #ffffff;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
+  /* border-top-width: 1px; */
+  /* border-bottom-width: 1px; */
   max-width: 100%;
 }
 
